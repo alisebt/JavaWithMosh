@@ -7,6 +7,24 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        FizzBuzz();
+    }
+
+    public static void FizzBuzz() {
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
+
+        String result = "";
+        if (number % 3 == 0)
+            result = "Fizz";
+        if (number % 5 == 0)
+            result += "Buzz";
+        if (result == "")
+            result = String.valueOf(number);
+        System.out.println(result);
+    }
+
+    public static void MortgageCalculator() {
         final byte MONTHS_IN_YEAR = 12;
         final byte PERCENT = 100;
 
